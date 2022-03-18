@@ -1,0 +1,531 @@
+:root {
+  --black-color: black;
+  --orange-color: #e50914;
+  --light_black: #333;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: var(--black-color);
+  color: white;
+  min-width: 300px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+  padding: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-size: 1.5rem;
+  padding: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+.unlimited_section {
+  background-image: url(Images/img1.jpg);
+  background-color: var(--light_black);
+  background-blend-mode: multiply;
+}
+
+.sign-up {
+  font-size: 1.5rem;
+  /* padding: 1rem; */
+}
+
+.unlimited_box {
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+}
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: var(--orange-color);
+}
+
+/* header img {
+  width: 6rem;
+  height: 2rem;
+} */
+
+header > a:nth-of-type(2) {
+  color: rgb(233, 219, 219);
+  margin-bottom: 2rem;
+  margin-top: 2%;
+  cursor: pointer;
+
+  text-decoration: none;
+  background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+}
+
+.unlimited_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail1_nd_btn_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  padding: 1rem;
+  border: none;
+  min-width: 300px;
+  margin-top: 1rem;
+}
+
+.unlimited_box button {
+  background-color: var(--orange-color);
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  border: none;
+}
+
+hr {
+  height: 0.7rem;
+  background-color: var(--light_black);
+  border: none;
+}
+
+/* Enjoy section */
+
+.enjoy_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.enjoy_section img {
+  height: 14rem;
+  padding: 1rem;
+}
+
+.enjoy_image_vid_box {
+  margin-left: 55rem;
+  position: relative;
+  top: 90%;
+  /* height: 13rem; */
+
+  width: 68%;
+  position: absolute;
+}
+
+.Your_tv {
+  margin-right: 40rem;
+}
+
+.enjoy_vid {
+  /* object-fit: contain; */
+  /* position: absolute; */
+  /* margin-left: 56%;
+  top: 10%;
+ 
+  bottom: 30rem;
+  z-index: -1; */
+  position: absolute;
+  left: 10%;
+  width: 55%;
+  top: 6%;
+  z-index: -1;
+}
+
+/* Download section */
+.download_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.phone_box {
+  position: relative;
+}
+
+.phone-img {
+  margin-left: 13rem;
+  height: 15rem;
+}
+
+.stranger_box {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  background-color: black;
+  border: 2px solid var(--light_black);
+  border-radius: 5px;
+  position: absolute;
+  top: 55%;
+  left: -40%;
+  max-width: 300px;
+  margin: 0px 2rem;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.gif {
+  height: 5rem;
+}
+
+.stranger_img {
+  height: 5rem;
+}
+
+.watch_section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 2rem;
+  display: flex;
+}
+
+.watch_img_vid_box {
+  position: relative;
+}
+
+.watch_section img {
+  z-index: 9999;
+  height: 14rem;
+}
+
+.watch_vid {
+  margin-right: 17rem;
+  top: 10%;
+
+  width: 60%;
+  z-index: -1;
+  object-fit: contain;
+  position: absolute;
+}
+
+/* frequently */
+
+.frequently_box {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.buttons_div {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  width: 50%;
+}
+
+.dropdown {
+  margin: auto;
+  height: 100%;
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #333;
+  max-width: 82.9%;
+}
+
+.dropdown-check:checked ~ .dropdown {
+  display: block;
+}
+
+.dropdown-check {
+  display: none;
+}
+
+.dropdown2 {
+  margin: auto;
+  height: 100%;
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #333;
+  max-width: 82.9%;
+}
+
+.dropdown-check2:checked ~ .dropdown2 {
+  display: block;
+}
+
+.dropdown-check2 {
+  display: none;
+}
+
+.dropdown3 {
+  margin: auto;
+  height: 100%;
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #333;
+  max-width: 82.9%;
+}
+
+.dropdown-check3:checked ~ .dropdown3 {
+  display: block;
+}
+
+.dropdown-check3 {
+  display: none;
+}
+
+.dropdown4 {
+  margin: auto;
+  height: 100%;
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #333;
+  max-width: 82.9%;
+}
+
+.dropdown-check4:checked ~ .dropdown4 {
+  display: block;
+}
+
+.dropdown-check4 {
+  display: none;
+}
+
+.dropdown5 {
+  height: 100%;
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #333;
+  max-width: 82.9%;
+  margin: auto;
+}
+
+.dropdown-check5:checked ~ .dropdown5 {
+  display: block;
+}
+
+.dropdown-check5 {
+  display: none;
+}
+
+.buttons_div button {
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  margin: 0.3rem 2rem;
+  background-color: #303030;
+}
+
+.mail_nd_btn_box {
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+}
+
+input {
+  border: none;
+  min-width: 300px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.mail_nd_btn_box button {
+  padding: 1rem;
+  color: white;
+  border: none;
+  max-width: 2px;
+  background-color: var(--orange-color);
+  margin-top: 1rem;
+}
+
+.top_link {
+  color: white;
+  text-decoration: none;
+  color: #757575;
+  display: inline-block;
+}
+
+.link_ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem !important;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link_ul li {
+  padding: 1em;
+}
+
+.link_ul a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.net_gh {
+  color: #757575;
+}
+
+@media only screen and (min-width: 950px) {
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    font-size: 3rem;
+    padding: 0.9rem;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    padding: 0.9rem;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .unlimited_box {
+    margin-top: 4rem;
+  }
+
+  /* Enjoy */
+
+  .enjoy_section img {
+    height: 20rem;
+  }
+
+  .enjoy_section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding: 5rem;
+  }
+
+  /* donwload */
+
+  .stranger_box h4 {
+    margin-left: 1.2rem;
+  }
+
+  .download_section {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phone {
+    margin-left: 11rem;
+    height: 20rem;
+  }
+
+  .stranger_box {
+    left: 27%;
+  }
+
+  /* watch */
+
+  .watch_section {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .watch_section img {
+    height: 20rem;
+  }
+
+  /* frequently */
+  .link_ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3rem !important;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .buttons_div button {
+    font-size: 1.2rem !important;
+  }
+
+  .unlimited_box {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+
+  .buttons_div button {
+    font-size: 2rem;
+  }
+
+  .dropdown {
+    min-width: 91%;
+    max-width: 82.9%;
+  }
+
+  .dropdown-b {
+    min-width: 91%;
+  }
+
+  .dropdown-c {
+    min-width: 91%;
+  }
+
+  .dropdown-d {
+    min-width: 91%;
+  }
+
+  .dropdown-e {
+    min-width: 91%;
+  }
+}
